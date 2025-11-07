@@ -13,14 +13,33 @@ The Fitfixer tool fixes these issues.
 
 ## Install requirements
 
-Fitfixer uses a third-party library to process FIT files. To install it and all dependencies, please use this command:
+Fitfixer is distributed as a Python package. Several installation methods are available.
+
+### Using pip
+
+Executing `pip` installs the package in your current Python environment. Global installation was once possible, but
+modern Linux distributions no longer permit this approach.
 
 ```bash
-pip install -r requirements.txt
+pip install fitfix
+```
+
+### Using pipx or uv
+
+Both `pipx` and `uv` enable global tool installation. The package can be installed as follows:
+
+```bash
+pipx install fitfix
+```
+
+or
+
+```bash
+uv tool install fitfix
 ```
 
 ## How to use
 
 ```bash
-python fitfixer.py <input file> <output file>
+fitfix <input file> <output file>
 ```
